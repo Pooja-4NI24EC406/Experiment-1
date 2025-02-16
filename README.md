@@ -15,16 +15,9 @@ The Common Source (CS) MOSFET amplifier is one of the most widely used configura
 <br>
 This report explains the theory, working, mathematical equations, and practical implementation on dc ac and transient analysis of this circuit.
 </br>
+<h3>CIRCUIT DAIGRAM</h3>
+![1st circuit](https://github.com/user-attachments/assets/e782bc5f-df49-4a4e-840a-5448a22dd3d3)
 
-<th>
-  <tr>
-    <td>component</td>
-  </tr>
-
- <tr>
-   <td>power supply
-   </td>
- </tr>
 
  <h3> COMPONENTS(SYMBOLS) with VALUE/SPECIFICATIONS </h3>
  <p>
@@ -69,11 +62,14 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 
 
 <h3> TRANSIENT ANALYSIS</h3>
+![transient analysis 11](https://github.com/user-attachments/assets/38deecdd-d963-449b-82f1-cd57f570572d)
+![transient anasysis111](https://github.com/user-attachments/assets/744fd8d5-cf29-47e7-869f-f8537cd2f8d7)
 
 
 
 
 <h3>AC ANALYSIS</h3>
+![AC Analysis](https://github.com/user-attachments/assets/e2d11372-e388-4a51-ac51-9d647d97937f)
 
 
 
@@ -93,16 +89,11 @@ The output voltage amplitude was higher than the input, confirming the amplifier
 
 <h3>INFERENCE</h3>
 <br>Based on the experimental and simulation results, the following conclusions were drawn:
-
-✅ The Common Source MOSFET Amplifier successfully amplifies small AC signals, making it ideal for analog signal processing.
-
-✅ The output is phase-inverted, which aligns with theoretical expectations.
-
-✅ The voltage gain depends on the transconductance () and the drain resistor (), allowing for design flexibility.
-
-✅ The MOSFET operates in the saturation region, ensuring a stable amplification process.
-
-✅ The LTSpice simulation results match theoretical calculations, confirming the circuit's validity.</br>
+The Common Source MOSFET Amplifier successfully amplifies small AC signals, making it ideal for analog signal processing.
+The output is phase-inverted, which aligns with theoretical expectations.
+The voltage gain depends on the transconductance () and the drain resistor (), allowing for design flexibility.
+The MOSFET operates in the saturation region, ensuring a stable amplification process.
+The LTSpice simulation results match theoretical calculations, confirming the circuit's validity.</br>
 
 <h3>Final Conclusion</h3>
 <p>This experiment demonstrated the working of a Common Source MOSFET Amplifier and verified its performance through mathematical analysis and circuit simulation. The results show that this amplifier configuration is effective for voltage amplification in electronic circuits.</p>

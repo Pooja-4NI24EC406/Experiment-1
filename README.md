@@ -27,6 +27,12 @@ This report explains the theory, working, mathematical equations, and practical 
  input voltage<VIN) - AC signal,
  ground-0v.
  </p>
+
+   <h3>CALCULATIONS</h3>
+
+
+
+   
   <h3>WORKING PRINCIPLE</h3>
 <h4>Operating Regions of MOSFET</h4>
 A MOSFET has three major operating regions:
@@ -46,7 +52,7 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 3. Voltage Gain (Av)     A_v = - g_m R_D     gm=kn(V_{GS} - V_{Th}
  (Transconductance)    R_D = Drain resistor
 
-<h3>LTSpice Simulation</h3>
+<h3>Steps for LTSpice Simulation</h3>
 
 <br>Step 1: Design the circuit in LTSpice</br>
 
@@ -89,10 +95,15 @@ The output voltage amplitude was higher than the input, confirming the amplifier
 
 <h3>INFERENCE</h3>
 <br>Based on the experimental and simulation results, the following conclusions were drawn:
+
 The Common Source MOSFET Amplifier successfully amplifies small AC signals, making it ideal for analog signal processing.
-The output is phase-inverted, which aligns with theoretical expectations.
+
+The output is phase-inverted, which aligns with theoretical expectations
+
 The voltage gain depends on the transconductance () and the drain resistor (), allowing for design flexibility.
+
 The MOSFET operates in the saturation region, ensuring a stable amplification process.
+
 The LTSpice simulation results match theoretical calculations, confirming the circuit's validity.</br>
 
 <h3>Final Conclusion</h3>

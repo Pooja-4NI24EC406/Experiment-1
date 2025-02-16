@@ -34,13 +34,25 @@ This report explains the theory, working, mathematical equations, and practical 
  input voltage<VIN) - AC signal,
  ground-0v.
  </p>
- 4. Working Principle
-
-<h3>Operating Regions of MOSFET</h3>
-<h4>A MOSFET has three major operating regions:</h4>
+  <h3>WORKING PRINCIPLE</h3>
+<h4>Operating Regions of MOSFET</h4>
+A MOSFET has three major operating regions:
 <br>1. Cutoff Region (Vgs<Vth) – No current flows.</br>
 <br>2. Saturation Region ((Vgs>Vth and Vds>Vgs-Vth) – Amplification mode.</br>
 <br>3. Ohmic/Linear Region ((Vgs>Vth and Vds<Vgs-Vth) – Acts as a resistor.</br>
 For amplification, the MOSFET must operate in the saturation region.
+
+ <h3>SOME IMP EQUATIONS/KEY EQUATIONS</h3> 
+
+1. Overdrive Voltage
+
+V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
+
+2. Drain Current in Saturation Region,     I_D = 1/2kn(Vgs-Vth)^2      I_D = Drain current      kn= Process transconductance parameter
+
+3. Voltage Gain (Av)     A_v = - g_m R_D     gm=kn(V_{GS} - V_{Th}
+ (Transconductance)    R_D = Drain resistor
+
+
 
     

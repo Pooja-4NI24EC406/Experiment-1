@@ -53,6 +53,62 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 3. Voltage Gain (Av)     A_v = - g_m R_D     gm=kn(V_{GS} - V_{Th}
  (Transconductance)    R_D = Drain resistor
 
+<h3>LTSpice Simulation</h3>
+
+<br>Step 1: Design the circuit in LTSpice</br>
+
+<br>Step 2: Set the input voltage as an AC source.</br>
+
+<br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.</br>
+
+<br>Step 4: Verify the current and phase inversion in the waveform.</br>
+
+<h3>DC ANALYSIS</h3>
+
+
+
+<h3> TRANSIENT ANALYSIS</h3>
+
+
+
+
+<h3>AC ANALYSIS</h3>
+
+
+
+<h3>RESULT</h3>
+After designing, analyzing, and simulating this circuit, the following results were observed:
+<br>1. Voltage Gain ():
+<p>The circuit provided a significant voltage amplification.
+The gain was calculated using  and verified using LTSpice simulation.</p></br>
+<br>2. Phase Inversion:
+<p>The output waveform was inverted with respect to the input, confirming the expected behavior of a common-source amplifier.</p><br>
+<br>3. Current Characteristics:
+<p>The drain current () followed the quadratic relationship in the saturation region:
+ I_D = 1/2kn(Vgs-Vth)^2</p></br>
+ <br>4. Simulation Results (LTSpice Analysis):
+<p>The transient analysis showed a clear amplification of the input AC signal.
+The output voltage amplitude was higher than the input, confirming the amplifier's functionality.</p></br>
+
+<h3>INFERENCE</h3>
+<br>Based on the experimental and simulation results, the following conclusions were drawn:
+
+✅ The Common Source MOSFET Amplifier successfully amplifies small AC signals, making it ideal for analog signal processing.
+
+✅ The output is phase-inverted, which aligns with theoretical expectations.
+
+✅ The voltage gain depends on the transconductance () and the drain resistor (), allowing for design flexibility.
+
+✅ The MOSFET operates in the saturation region, ensuring a stable amplification process.
+
+✅ The LTSpice simulation results match theoretical calculations, confirming the circuit's validity.</br>
+
+<h3>Final Conclusion</h3>
+<p>This experiment demonstrated the working of a Common Source MOSFET Amplifier and verified its performance through mathematical analysis and circuit simulation. The results show that this amplifier configuration is effective for voltage amplification in electronic circuits.</p>
+
+
+
+
 
 
     

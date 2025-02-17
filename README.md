@@ -134,8 +134,48 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 
 <h2>PROBLEM 2</h2>
+<h3>CIRCUIT DAIGRAM</h3>
 
+![image](https://github.com/user-attachments/assets/b4ad8698-9859-4bf2-9d7c-f908b7aae2ba)
 
+<h3>DC ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/c748f36f-0023-474a-8f3f-a81ee41b9f07)
+
+ <h3>CALCULATIONS</h3>
+   <br>Given</br>
+  <br> Vdd=1.8v</br>
+   <br></br>
+   <br>Vs=0v</br>
+   <br>Vin(Vg)=0.9v</br>
+   <br>P=100uW</br>
+   <br>theoritical:</br>
+   <br>P=V*I</br>
+   <br>100uW=0.9v*I</br>
+   <br>I=55.5uA</br>
+   
+
+   <br>FROM DC ANALYSIS OUTPUT:</br>
+  <br> Vd(Vout)=1.73v
+   Vg=0.9v
+   Vs=0v
+   Vgs=Vg-Vs
+   Vgs=0.9v-0v=0.9v
+   Vth=0.36V
+   Vov=Vgs-Vth
+   Vov=0.9-0.36=0.54V
+
+<h3>TRANSIENT ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/c17543a3-0276-4666-b4ac-a574b3d9c08e)
+
+<br>output</br>
+
+![image](https://github.com/user-attachments/assets/4c93dae8-2785-4169-8ec3-155302cb7f04)
+
+<h3>AC ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/561b4fef-c36a-4441-a07e-c85c81c12bfd)
 
 
 

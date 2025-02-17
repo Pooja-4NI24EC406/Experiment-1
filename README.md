@@ -71,10 +71,16 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
   <br> Vdd=1.8v</br>
    <br>R1=1.3k</br>
    <br>Vs=0v</br>
-   <br>Vg=0.9v</br>
+   <br>Vin(Vg)=0.9v</br>
+   <br>P=100uW</br>
+   theoritical:
+   <br>P=V*I</br>
+   <br>100uW=0.9v*I</br>
+   <br>I=55.5uA</br>
+   
 
    FROM DC ANALYSIS OUTPUT:
-  <br> Vd(Vout)=
+  <br> Vd(Vout)=1.73v
    Vg=0.9v
    Vs=0v
    Vgs=Vg-Vs
@@ -102,8 +108,8 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 
 <h3>RESULT</h3>
-<br>Drain current is theoritical=55.5uA and practically in LTspice=54.44uA</br>
-<br>Vov=       Vout=     Vth=
+<br>Drain current is theoritical=55.5uA and practically in LTspice=55.5uA</br>
+<br>Vov=       Vout=1.73v     Vth=
 <br>AC Gain=
 <br>The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.</br>
 
@@ -111,7 +117,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 <h3>INFERENCE</h3>
 <br>After designing, analyzing, and simulating this circuit,</br>
-<br>Current is calculated , theorical value is 55.5uA, after simulating in LTspice we get or setted as 54.44uA.The circuit provided a significant voltage amplification.</br>
+<br>Current is calculated , theorical value is 55.5uA, after simulating in LTspice we get or setted as 55.54uA.The circuit provided a significant voltage amplification.</br>
 <br>The gain was calculated and verified using LTSpice simulation.</br>
 <br>The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.</br>
 <br>The current is calculated by using formula, Power is given,so P=V*I, for amplifieng current is always in saturation region I_D = 1/2kn(Vgs-Vth)^2.</br>

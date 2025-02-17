@@ -114,8 +114,8 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 <h3>RESULT</h3>
 <br>Drain current is theoritical=55.5uA and practically in LTspice=55.5uA</br>
-<br>Vov=       Vout=1.73v     Vth=
-<br>AC Gain=
+<br>Vov=0.54v      Vout=1.73v     Vth=0.36v
+<br>AC Gain=1.92v
 <br>The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.</br>
 
 
@@ -134,6 +134,9 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 
 <h2>PROBLEM 2</h2>
+
+
+
 
 
 

@@ -136,6 +136,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 <h2>PROBLEM 2</h2>
 <h3>CIRCUIT DAIGRAM</h3>
 
+![image](https://github.com/user-attachments/assets/b4ad8698-9859-4bf2-9d7c-f908b7aae2ba)
 
 <h3>Simulation</h3>
 
@@ -144,7 +145,6 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 <br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.</br>
 <br>Step 4: Verify the current and phase inversion in the waveform.</br>
 
-![image](https://github.com/user-attachments/assets/b4ad8698-9859-4bf2-9d7c-f908b7aae2ba)
 
 <h3>DC ANALYSIS</h3>
 
@@ -174,7 +174,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    Vov=Vgs-Vtn
    Vov(NMOS)=0.9-0.36=0.54V
    Vov=Vsg-Vtp
-   Vov(PMOS)=0-0.9=-0.9v
+   Vov(PMOS)=0-0.9=-0.9v</ br>
 
 <h3>TRANSIENT ANALYSIS</h3>
 
@@ -189,11 +189,25 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 ![image](https://github.com/user-attachments/assets/561b4fef-c36a-4441-a07e-c85c81c12bfd)
 
 <br>Av=Vout/Vin</br>
-Av= 3.7
+Av= 3.7 dB
 
 <h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
 <br> Common source with Rd and two MOSFETS's</br>
 
+<h3>RESULT </h3>
+<br>Drain current is theoritical=55.5uA and practically in LTspice=55.54uA</br>
+<br>Vov=0.54v      Vout=1.73v     Vth=0.36v</br>
+<br>AC Gain=3.7dB
+<br>The output waveform was inverted with respect to the input,and observed amplified signal</br>
+
+<h3>INFERENCE</h3>
+<br>designed and analyzed and also simulated two MOSFET circuit,</br>
+<br>Caculated current is same because of same power, theorical value is 55.5uA,practically or setted as 55.54uA by adjusting or changing the length (L) value. output is amplified with respect to input.</br>
+<br>The gain was calculated and verified using LTSpice simulation.
+here practically gain is 3.74 dB</br>
+<br>The output waveform was inverted with respect to the input in transient analysis</br>
+
+<h2> COMPARISON </h2>
 |Common source with Rd|Two MOSFET'|
 |---------------------|-----------|
 |A single MOSFET with a drain resistor RD in the drain branch|two MOSFET's configured in a common source|

@@ -70,13 +70,16 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 
 
 <h3> TRANSIENT ANALYSIS</h3>
+
 ![transient analysis 11](https://github.com/user-attachments/assets/38deecdd-d963-449b-82f1-cd57f570572d)
+
 ![transient anasysis111](https://github.com/user-attachments/assets/744fd8d5-cf29-47e7-869f-f8537cd2f8d7)
 
 
 
 
 <h3>AC ANALYSIS</h3>
+
 ![AC Analysis](https://github.com/user-attachments/assets/e2d11372-e388-4a51-ac51-9d647d97937f)
 
 

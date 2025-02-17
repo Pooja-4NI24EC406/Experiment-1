@@ -2,13 +2,13 @@
 <body>
 <center>
   <font color="black">
-
- <h1>DC, TRANSIENT AND AC ANALYSIS ON COMMON SOURCE AMPLIFIER USING MOSFET</h1>
+<h1> Problem 1</h1>
+ <h2>DC, TRANSIENT AND AC ANALYSIS ON COMMON SOURCE AMPLIFIER USING MOSFET</h2>
  </font>
  </center>
  </body>
  <br>
- <h2>THEORY/INTRODUCTION </h2>  </br> 
+ <h3>THEORY/INTRODUCTION </h3>  </br> 
      <br>
    AC, DC and transient analysis of common source amplifier. The circuit is designed using a MOSFET transistor, which operates in the saturation region to provide amplification.      
 The Common Source (CS) MOSFET amplifier is one of the most widely used configurations in analog circuit design. It is used for voltage amplification and is commonly found in audio systems, RF amplifiers, and signal processing circuits.</br>
@@ -23,11 +23,11 @@ This report explains the theory, working, mathematical equations, and practical 
 
  <h3> COMPONENTS(SYMBOLS) with VALUE/SPECIFICATIONS </h3>
  <p>
-<br> power supply(VDD) - 12V,
- drain resistor(RD)-1K,
- mosfet(CMOSN)-NMOS4,
- input voltage<VIN) - AC signal,
- ground-0v.</br>
+<br> power supply(VDD) - 12V,</br>
+<br>  drain resistor(RD)-1k,</br>
+ <br> mosfet(CMOSN)-NMOS4,</br>
+ <br> input voltage(VIN)- ac signal</br>
+ <br> ground-0v.</br>
  </p>
 
 
@@ -35,9 +35,9 @@ This report explains the theory, working, mathematical equations, and practical 
   <h3>Working principle</h3>
 <h4>Operating Regions of MOSFET</h4>
 A MOSFET has three major operating regions:
-<br>1. Cutoff Region (Vgs<Vth) – No current flows.</br>
+<br>1. Cutoff Region (Vgs < Vth ) ></Vth>– No current flows.    </br>
 <br>2. Saturation Region ((Vgs>Vth and Vds>Vgs-Vth) – Amplification mode.</br>
-<br>3. Ohmic/Linear Region ((Vgs>Vth and Vds<Vgs-Vth) – Acts as a resistor.</br>
+<br>3. Ohmic/Linear Region ((Vgs>Vth and Vds<Vgs-Vth) ></Vgs-Vth>– Acts as a resistor.  </br>
 For amplification, the MOSFET must operate in the saturation region.
 
 
@@ -73,21 +73,21 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    <br>Vs=0v</br>
    <br>Vin(Vg)=0.9v</br>
    <br>P=100uW</br>
-   theoritical:
+   <br>theoritical:</br>
    <br>P=V*I</br>
    <br>100uW=0.9v*I</br>
    <br>I=55.5uA</br>
    
 
-   FROM DC ANALYSIS OUTPUT:
+   <br>FROM DC ANALYSIS OUTPUT:</br>
   <br> Vd(Vout)=1.73v
    Vg=0.9v
    Vs=0v
    Vgs=Vg-Vs
    Vgs=0.9v-0v=0.9v
-   Vth=
+   Vth=0.36V
    Vov=Vgs-Vth
-   Vov=
+   Vov=0.9-0.36=0.54V
    
 
 <h3> TRANSIENT ANALYSIS</h3>
@@ -103,7 +103,10 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 ![AC Analysis](https://github.com/user-attachments/assets/e2d11372-e388-4a51-ac51-9d647d97937f)
 
-
+<br>Av=Vout/Vin</br>
+<br>Av=1.73/0.9</br>
+<br>Av=1.92</br>
+<br> practically: 2 dB</br>
 
 
 
@@ -126,6 +129,13 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 <h3>Final Conclusion</h3>
 <p>This experirement demonstrated the working of a common source amplifier and verified it circuit by analyzing and simulating. The result shows that this amplifier is effective for voltage amplication. Hence proved by simulating in LTSpice.</p>
+
+
+<h2>PROBLEM 2</h2>
+
+
+
+
 
 
 

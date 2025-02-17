@@ -101,7 +101,9 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 <h3>AC ANALYSIS</h3>
 
-![AC Analysis](https://github.com/user-attachments/assets/e2d11372-e388-4a51-ac51-9d647d97937f)
+![image](https://github.com/user-attachments/assets/d4fc52f5-d907-43de-a419-580e9fe24ed7)
+
+
 
 <br>Av=Vout/Vin</br>
 <br>Av=1.73/0.9</br>

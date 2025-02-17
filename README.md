@@ -1,14 +1,14 @@
 # Experiment-1  
 <body>
 <center>
-  <font color="pink">
+  <font color="black">
 
  <h1>DC, TRANSIENT AND AC ANALYSIS ON COMMON SOURCE AMPLIFIER USING MOSFET</h1>
  </font>
  </center>
  </body>
  <br>
- <h2> INTRODUCTION </h2>  </br> 
+ <h2>THEORY/INTRODUCTION </h2>  </br> 
      <br>
    AC, DC and transient analysis of common source amplifier. The circuit is designed using a MOSFET transistor, which operates in the saturation region to provide amplification.      
 The Common Source (CS) MOSFET amplifier is one of the most widely used configurations in analog circuit design. It is used for voltage amplification and is commonly found in audio systems, RF amplifiers, and signal processing circuits.</br>
@@ -22,19 +22,14 @@ This report explains the theory, working, mathematical equations, and practical 
 
  <h3> COMPONENTS(SYMBOLS) with VALUE/SPECIFICATIONS </h3>
  <p>
- power supply(VDD) - 12V,
+<br> power supply(VDD) - 12V,
  drain resistor(RD)-1K,
  mosfet(CMOSN)-NMOS4,
  input voltage<VIN) - AC signal,
- ground-0v.
+ ground-0v.</br>
  </p>
 
-   <h3>CALCULATIONS</h3>
-
-
-
-   
-  <h3>WORKING PRINCIPLE</h3>
+  <h3>Working principle</h3>
 <h4>Operating Regions of MOSFET</h4>
 A MOSFET has three major operating regions:
 <br>1. Cutoff Region (Vgs<Vth) – No current flows.</br>
@@ -46,11 +41,11 @@ For amplification, the MOSFET must operate in the saturation region.
 
 1. Overdrive Voltage
 
-V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
+Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 2. Drain Current in Saturation Region,     I_D = 1/2kn(Vgs-Vth)^2      I_D = Drain current      kn= Process transconductance parameter
 
-3. Voltage Gain (Av)     A_v = - g_m R_D     gm=kn(V_{GS} - V_{Th}
+3. Voltage Gain (Av)     A_v = -Gm*Rd     gm=kn(Vgs-Vth)
  (Transconductance)    R_D = Drain resistor
 
 <h3>Steps for LTSpice Simulation</h3>
@@ -67,7 +62,23 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 
 ![DC Analysis](https://github.com/user-attachments/assets/01ee2d9f-a943-4943-b484-2d63cd7a4095)
 
+ <h3>CALCULATIONS</h3>
+   <br>Given
+   Vdd=1.8v
+   R1=1.3k
+   Vs=0v
+   Vg=0.9v
 
+   FROM DC ANALYSIS OUTPUT:
+   Vd(Vout)=
+   Vg=0.9v
+   Vs=0v
+   Vgs=Vg-Vs
+   Vgs=0.9v-0v=0.9v
+   Vth=
+   Vov=Vgs-Vth
+   Vov=
+   
 
 <h3> TRANSIENT ANALYSIS</h3>
 
@@ -84,35 +95,32 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 
 
 
+
 <h3>RESULT</h3>
+Drain current is theoritical=55.5uA and practically in LTspice=54.44uA
+Vov=       Vout=     Vth=
+AC Gain=
+The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.
 After designing, analyzing, and simulating this circuit, the following results were observed:
-<br>1. Voltage Gain ():
-<p>The circuit provided a significant voltage amplification.
-The gain was calculated using  and verified using LTSpice simulation.</p></br>
-<br>2. Phase Inversion:
-<p>The output waveform was inverted with respect to the input, confirming the expected behavior of a common-source amplifier.</p><br>
-<br>3. Current Characteristics:
-<p>The drain current () followed the quadratic relationship in the saturation region:
- I_D = 1/2kn(Vgs-Vth)^2</p></br>
+Current is calculated , theorical value is 55.5uA, after simulating in LTspice we get or setted as 54.44uA.The circuit provided a significant voltage amplification.
+The gain was calculated and verified using LTSpice simulation.
+The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.
+ I_D = 1/2kn(Vgs-Vth)^2
  <br>4. Simulation Results (LTSpice Analysis):
 <p>The transient analysis showed a clear amplification of the input AC signal.
 The output voltage amplitude was higher than the input, confirming the amplifier's functionality.</p></br>
 
 <h3>INFERENCE</h3>
-<br>Based on the experimental and simulation results, the following conclusions were drawn:
+<br>After designing, analyzing, and simulating this circuit,
+Current is calculated , theorical value is 55.5uA, after simulating in LTspice we get or setted as 54.44uA.The circuit provided a significant voltage amplification.
+The gain was calculated and verified using LTSpice simulation.
+The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.
+The current is calculated by using formula, Power is given,so P=V*I, for amplifieng current is always in saturation region I_D = 1/2kn(Vgs-Vth)^2
+The voltage gain gepends on the transconductance and drain resistor Av=-Gm*Rd. LTSpice simulation results match with theoretical calculations.</br>
 
-The Common Source MOSFET Amplifier successfully amplifies small AC signals, making it ideal for analog signal processing.
-
-The output is phase-inverted, which aligns with theoretical expectations
-
-The voltage gain depends on the transconductance () and the drain resistor (), allowing for design flexibility.
-
-The MOSFET operates in the saturation region, ensuring a stable amplification process.
-
-The LTSpice simulation results match theoretical calculations, confirming the circuit's validity.</br>
 
 <h3>Final Conclusion</h3>
-<p>This experiment demonstrated the working of a Common Source MOSFET Amplifier and verified its performance through mathematical analysis and circuit simulation. The results show that this amplifier configuration is effective for voltage amplification in electronic circuits.</p>
+<p>This experirement demonstrated the working of a common source amplifier and verified it circuit by analyzing and simulating. The result shows that this amplifier is effective for voltage amplication. Hence proved by simulating in LTSpice.</p>
 
 
 

@@ -136,6 +136,14 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 <h2>PROBLEM 2</h2>
 <h3>CIRCUIT DAIGRAM</h3>
 
+
+<h3>Simulation</h3>
+
+<br>Step 1: Design the circuit in LTSpice</br>
+<br>Step 2: Set the input voltage as an AC source.</br>
+<br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.</br>
+<br>Step 4: Verify the current and phase inversion in the waveform.</br>
+
 ![image](https://github.com/user-attachments/assets/b4ad8698-9859-4bf2-9d7c-f908b7aae2ba)
 
 <h3>DC ANALYSIS</h3>
@@ -145,9 +153,9 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
  <h3>CALCULATIONS</h3>
    <br>Given</br>
   <br> Vdd=1.8v</br>
-   <br></br>
+   <br>V1(Vb)=0.48v</br>
    <br>Vs=0v</br>
-   <br>Vin(Vg)=0.9v</br>
+   <br>V2=0.9v</br>
    <br>P=100uW</br>
    <br>theoritical:</br>
    <br>P=V*I</br>
@@ -161,15 +169,18 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    Vs=0v
    Vgs=Vg-Vs
    Vgs=0.9v-0v=0.9v
-   Vth=0.36V
-   Vov=Vgs-Vth
-   Vov=0.9-0.36=0.54V
+   Vtn=0.36V
+   Vtp=-0.39v
+   Vov=Vgs-Vtn
+   Vov(NMOS)=0.9-0.36=0.54V
+   Vov=Vsg-Vtp
+   Vov(PMOS)=0-0.9=-0.9v
 
 <h3>TRANSIENT ANALYSIS</h3>
 
 ![image](https://github.com/user-attachments/assets/c17543a3-0276-4666-b4ac-a574b3d9c08e)
 
-<br>output</br>
+
 
 ![image](https://github.com/user-attachments/assets/4c93dae8-2785-4169-8ec3-155302cb7f04)
 
@@ -177,12 +188,21 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 ![image](https://github.com/user-attachments/assets/561b4fef-c36a-4441-a07e-c85c81c12bfd)
 
+<br>Av=Vout/Vin</br>
+Av= 3.7
 
+<h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
+<br> Common source with Rd and two MOSFETS's</br>
 
-
-
-
-
+|Common source with Rd|Two MOSFET'|
+|---------------------|-----------|
+|A single MOSFET with a drain resistor RD in the drain branch|two MOSFET's configured in a common source|
+|Id=55.5uA|Id=55.5uA|
+|single MOSFET for amplification|two mosfets one May act as a cascade or a load|
+|Power=100uA|Here power is taken as same 100uA|
+|W=180nV and L=0.2uV|W=180nV L=0.3uV|
+|Practically Av=2dB| Av=3.7dB|
+|it is mainly used for basic analog amplification audio signals|it is used for high frequency amplification and RF circuits and low noise amplification|
 
 
 

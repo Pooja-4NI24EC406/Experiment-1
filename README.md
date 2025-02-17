@@ -193,8 +193,6 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 <br>Av=Vout/Vin</br>
 Av= 3.7 dB
 
-<h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
-<br> Common source with Rd and two MOSFETS's</br>
 
 <h3>RESULT </h3>
 <br>Drain current is theoritical=55.5uA and practically in LTspice=55.54uA</br>
@@ -209,9 +207,10 @@ Av= 3.7 dB
 here practically gain is 3.74 dB</br>
 <br>The output waveform was inverted with respect to the input in transient analysis</br>
 
-<h2> COMPARISON </h2>
+<h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
+<br> Common source with Rd and two MOSFETS's</br>
 |Common source with Rd|Two MOSFET'|
-|---------------------|-----------|
+|_____________________|___________|
 |A single MOSFET with a drain resistor RD in the drain branch|two MOSFET's configured in a common source|
 |Id=55.5uA|Id=55.5uA|
 |single MOSFET for amplification|two mosfets one May act as a cascade or a load|

@@ -134,6 +134,8 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 
 <h2>PROBLEM 2</h2>
+<h3> Theory</h3>
+<p> Analysis of cmos inverter( PMOS and CMOS) this circuit consist both CMOS transistor and PMOS transistor CMOS inverter is the fundamental of logic gates.</p>
 <h3>CIRCUIT DAIGRAM</h3>
 
 ![image](https://github.com/user-attachments/assets/b4ad8698-9859-4bf2-9d7c-f908b7aae2ba)

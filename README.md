@@ -209,9 +209,9 @@ here practically gain is 3.74 dB</br>
 
 <h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
 <br> Common source with Rd and two MOSFETS's</br>
-|Common source with Rd|Two MOSFET'|
-|_____________________|___________|
-|A single MOSFET with a drain resistor RD in the drain branch|two MOSFET's configured in a common source|
+| Common source with Rd | Two MOSFET' |
+|-----------------------|--------------------|
+| A single MOSFET with a drain resistor RD in the drain branch | two MOSFET's configured in a common source |
 |Id=55.5uA|Id=55.5uA|
 |single MOSFET for amplification|two mosfets one May act as a cascade or a load|
 |Power=100uA|Here power is taken as same 100uA|

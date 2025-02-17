@@ -16,6 +16,7 @@ The Common Source (CS) MOSFET amplifier is one of the most widely used configura
 This report explains the theory, working, mathematical equations, and practical implementation on dc ac and transient analysis of this circuit.
 </br>
 <h3>CIRCUIT DAIGRAM</h3>
+
 ![1st circuit](https://github.com/user-attachments/assets/e782bc5f-df49-4a4e-840a-5448a22dd3d3)
 
 

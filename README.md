@@ -64,6 +64,7 @@ V_{OV} = V_{GS} - V_{Th},    VGS = Gate-Source Voltage,      VTH = Threshold Vol
 <br>Step 4: Verify the current and phase inversion in the waveform.</br>
 
 <h3>DC ANALYSIS</h3>
+
 ![DC Analysis](https://github.com/user-attachments/assets/01ee2d9f-a943-4943-b484-2d63cd7a4095)
 
 

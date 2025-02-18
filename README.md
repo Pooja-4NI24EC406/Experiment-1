@@ -88,7 +88,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    Vgs=0.9v-0v=0.9v
    Vth=0.36V
    Vov=Vgs-Vth
-   <br>Vov=0.9-0.36=0.54V</br>
+   Vov=0.9-0.36=0.54V</br>
    
 
 <h3> TRANSIENT ANALYSIS</h3>
@@ -154,12 +154,12 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 ![image](https://github.com/user-attachments/assets/c748f36f-0023-474a-8f3f-a81ee41b9f07)
 
  <h3>CALCULATIONS</h3>
-   <br>Given
-  Vdd=1.8v
-   V1(Vb)=0.48v
-   Vs=0v
-   V2=0.9v
-   P=100uW</br>
+   <br>Given</br>
+  <br>Vdd=1.8v</br>
+   <br>V1(Vb)=0.48v</br>
+  <br> Vs=0v</br>
+   <br>V2=0.9v</br>
+   <br>P=100uW</br>
    <br>theoritical:</br>
    <br>P=V*I</br>
    <br>100uW=0.9v*I</br>
@@ -174,7 +174,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    Vgs=0.9v-0v=0.9v
    Vtn=0.36V
    Vtp=-0.39v
-   Vov=Vgs-Vtn
+   Vov=Vgs-Vtn</br>
   <br> Vov(NMOS)=0.9-0.36=0.54V</br>
    Vov=Vsg-Vtp
   <br> Vov(PMOS)=-0.9v-(-0.36)=-0.54v</br>
@@ -183,8 +183,6 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 <h3>TRANSIENT ANALYSIS</h3>
 
 ![image](https://github.com/user-attachments/assets/c17543a3-0276-4666-b4ac-a574b3d9c08e)
-
-
 
 ![image](https://github.com/user-attachments/assets/4c93dae8-2785-4169-8ec3-155302cb7f04)
 

@@ -38,6 +38,7 @@ A MOSFET has three major operating regions:
 <br>1. Cutoff Region (Vgs < Vth ) ></Vth>– No current flows.    </br>
 <br>2. Saturation Region ((Vgs>Vth and Vds>Vgs-Vth) – Amplification mode.</br>
 <br>3. Ohmic/Linear Region ((Vgs>Vth and Vds<Vgs-Vth) ></Vgs-Vth>– Acts as a resistor.  </br>
+
 For amplification, the MOSFET must operate in the saturation region.
 
 
@@ -87,7 +88,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    Vgs=0.9v-0v=0.9v
    Vth=0.36V
    Vov=Vgs-Vth
-   Vov=0.9-0.36=0.54V
+   <br>Vov=0.9-0.36=0.54V</br>
    
 
 <h3> TRANSIENT ANALYSIS</h3>
@@ -115,7 +116,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 <h3>RESULT</h3>
 <br>Drain current is theoritical=55.5uA and practically in LTspice=55.5uA</br>
 <br>Vov=0.54v      Vout=1.73v     Vth=0.36v
-<br>AC Gain=1.92v
+<br>AC Gain=1.92v practical 2dB</br>
 <br>The output waveform was inverted with respect to the input, here we observed the behavior of a common-source amplifier.</br>
 
 
@@ -140,10 +141,10 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 
 ![image](https://github.com/user-attachments/assets/b4ad8698-9859-4bf2-9d7c-f908b7aae2ba)
 
-<h3>Simulation</h3>
+<h3>LTSpice Simulation steps </h3>
 
 <br>Step 1: Design the circuit in LTSpice</br>
-<br>Step 2: Set the input voltage as an AC source.</br>
+<br>Step 2: Set the input voltage as an AC source V1(Vb) and V2 (Vin)</br>
 <br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.</br>
 <br>Step 4: Verify the current and phase inversion in the waveform.</br>
 
@@ -163,7 +164,7 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    <br>P=V*I</br>
    <br>100uW=0.9v*I</br>
    <br>I=55.5uA</br>
-   
+   <br>W=180um, L1=0.1nm, L2=0.2nm</br>
 
    <br>FROM DC ANALYSIS OUTPUT:</br>
   <br> Vd(Vout)=1.73v
@@ -174,9 +175,10 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
    Vtn=0.36V
    Vtp=-0.39v
    Vov=Vgs-Vtn
-   Vov(NMOS)=0.9-0.36=0.54V
+  <br> Vov(NMOS)=0.9-0.36=0.54V</br>
    Vov=Vsg-Vtp
-   Vov(PMOS)=0-0.9=-0.9v</ br>
+  <br> Vov(PMOS)=-0.9v-(-0.36)=-0.54v</br>
+  
 
 <h3>TRANSIENT ANALYSIS</h3>
 
@@ -191,20 +193,20 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 ![image](https://github.com/user-attachments/assets/561b4fef-c36a-4441-a07e-c85c81c12bfd)
 
 <br>Av=Vout/Vin</br>
-Av= 3.7 dB
+Av=7.6v
 
 
 <h3>RESULT </h3>
 <br>Drain current is theoritical=55.5uA and practically in LTspice=55.54uA</br>
 <br>Vov=0.54v      Vout=1.73v     Vth=0.36v</br>
-<br>AC Gain=3.7dB
+<br>AC Gain=7.6v</br>
 <br>The output waveform was inverted with respect to the input,and observed amplified signal</br>
 
 <h3>INFERENCE</h3>
 <br>designed and analyzed and also simulated two MOSFET circuit,</br>
 <br>Caculated current is same because of same power, theorical value is 55.5uA,practically or setted as 55.54uA by adjusting or changing the length (L) value. output is amplified with respect to input.</br>
 <br>The gain was calculated and verified using LTSpice simulation.
-here practically gain is 3.74 dB</br>
+here practically gain is 7.6v</br>
 <br>The output waveform was inverted with respect to the input in transient analysis</br>
 
 <h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
@@ -216,9 +218,9 @@ here practically gain is 3.74 dB</br>
 |Id=55.5uA|Id=55.5uA|
 |single MOSFET for amplification|two mosfets one May act as a cascade or a load|
 |Power=100uA|Here power is taken as same 100uA|
-|W=180nV and L=0.2uV|W=180nV L=0.3uV|
-|Practically Av=2dB| Av=3.7dB|
-|it is mainly used for basic analog amplification audio signals|it is used for high frequency amplification and RF circuits and low noise amplification|
+|W=180nm and L=0.2um(NMOS)|W=180nm L=0.2um(NMOS) and W=180nm L=0.1nm(PMOS)|
+|Av=1.76v| Av=7.6v|
+|It is mainly used for basic analog amplification audio signals|it is used for high frequency amplification and RF circuits and low noise amplification|
 
 
 

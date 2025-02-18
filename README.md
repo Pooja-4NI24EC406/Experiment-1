@@ -209,6 +209,7 @@ here practically gain is 3.74 dB</br>
 
 <h3>COMPARISON BETWEEN PROBLEM 1 and PROBLEM 2</h3>
 <br> Common source with Rd and two MOSFETS's</br>
+
 | Common source with Rd | Two MOSFET' |
 |-----------------------|--------------------|
 | A single MOSFET with a drain resistor RD in the drain branch | two MOSFET's configured in a common source |

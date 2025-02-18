@@ -154,12 +154,12 @@ Vov=Vgs-Vth,    VGS = Gate-Source Voltage,      VTH = Threshold Voltage
 ![image](https://github.com/user-attachments/assets/c748f36f-0023-474a-8f3f-a81ee41b9f07)
 
  <h3>CALCULATIONS</h3>
-   <br>Given</br>
-  <br> Vdd=1.8v</br>
-   <br>V1(Vb)=0.48v</br>
-   <br>Vs=0v</br>
-   <br>V2=0.9v</br>
-   <br>P=100uW</br>
+   <br>Given
+  Vdd=1.8v
+   V1(Vb)=0.48v
+   Vs=0v
+   V2=0.9v
+   P=100uW</br>
    <br>theoritical:</br>
    <br>P=V*I</br>
    <br>100uW=0.9v*I</br>
